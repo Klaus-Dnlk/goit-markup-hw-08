@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Визуально спрятанная section-title и portfolio */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* ultilities */
+.list {
+  list-style: none;
+  // margin-top: 0;
+  // margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: $mainTextColor;
+  text-decoration: none;
+}
+
+/* body */
+
+body {
+  margin: 0;
+  color: $mainTextColor;
+  background-color: $mainBgColor;
+
+  font-family: $mainFontFamily;
+  font-size: $mainFontSize;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
