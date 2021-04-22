@@ -1,13 +1,11 @@
 /* our works */
 .our-works__container {
-  @include container;
-
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
+  display: none;
 
   @media screen and (min-width: 1200px) {
+    @include container;
     width: 1200px;
+    margin-bottom: 94px;
   }
 }
 .our-works__list {

@@ -2,43 +2,40 @@
 
 .features__container {
   @include container;
+  margin-bottom: 60px;
 }
 
 .feature__list {
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  //   margin: -15px;
+  // }
 
   @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    // margin: -15px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    margin-bottom: 94px;
   }
 }
 
 .feature__item {
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-
-    // text-align: center;
-  }
-
   @media screen and (min-width: 768px) {
-    // width: 768px;
-
-    width: calc((100% - 90px) / 2);
+    width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
     // max-width: 1600px;
 
     width: calc((100% - 90px) / 4);
+    margin-bottom: 30px;
   }
 }
 

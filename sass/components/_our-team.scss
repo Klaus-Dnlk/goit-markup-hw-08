@@ -1,17 +1,25 @@
 /* our team */
 .team__container {
   @include container;
-  padding-top: 94px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
 .team__section {
   background-color: $teamBgColor;
 }
-.team__list {
-  padding-bottom: 94px;
-}
+// .team__list {
+//   padding-bottom: 94px;
+// }
 
 .team__list {
+  padding-bottom: 60px;
+
   @media screen and (min-width: 480px) {
     width: 480px;
 
@@ -26,6 +34,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding-bottom: 94px;
   }
 }
 
@@ -36,7 +45,6 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 
   background-color: $mainBgColor;
 
@@ -44,7 +52,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
