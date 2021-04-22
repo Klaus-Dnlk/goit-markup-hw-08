@@ -16,16 +16,17 @@
   @media screen and (min-width: 768px) {
     width: 768px;
 
-    @include footer;
+    @include flex;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    text-align: left;
   }
 }
 
 .footer__item {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 
