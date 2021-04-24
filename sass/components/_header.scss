@@ -17,6 +17,7 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    height: 80px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -33,9 +34,10 @@
 
   min-height: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     @include flex;
     justify-content: space-between;
+    min-height: 80px;
   }
 }
 
@@ -97,6 +99,11 @@
     @include flex;
     margin-right: auto;
     justify-content: space-between;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
   }
 }
 
@@ -109,8 +116,8 @@
     @include flex;
   }
 
-  @media screen and (min-width: 1200px) {
-  }
+  // @media screen and (min-width: 1200px) {
+  // }
 }
 
 // .page-nav__item {
@@ -160,6 +167,9 @@
   @media screen and (max-width: 767px) {
     margin-top: auto;
   }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 
   @media screen and (min-width: 1200px) {
     @include flex;
@@ -167,9 +177,13 @@
   }
 }
 
-.page-nav__item:not(:last-child),
-.contacts__item:not(:last-child) {
+.page-nav__item:not(:last-child) {
   @media screen and (min-width: 480px) {
+    margin-right: 50px;
+  }
+}
+.contacts__item:not(:last-child) {
+  @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
 }
@@ -204,10 +218,15 @@
     font-size: 34px;
     line-height: 1.2;
   }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 
   @include flex(inline-flex);
-  padding-top: 21px;
-  padding-bottom: 21px;
 
   color: $mainTextColor;
 
@@ -227,6 +246,9 @@
 .contacts__item {
   @media screen and (max-width: 767px) {
     margin: 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0;
   }
 }
 .contacts__icon {

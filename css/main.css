@@ -84,6 +84,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -141,6 +148,7 @@ body {
 @media screen and (min-width: 768px) {
   .head-section__containter {
     width: 768px;
+    height: 80px;
   }
 }
 
@@ -165,7 +173,7 @@ body {
   min-height: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176,6 +184,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    min-height: 80px;
   }
 }
 
@@ -256,6 +265,13 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav__menu {
+    width: 100%;
   }
 }
 
@@ -335,6 +351,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts {
     display: -webkit-box;
@@ -348,7 +370,12 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .page-nav__item:not(:last-child),
+  .page-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -381,8 +408,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 21px;
-  padding-bottom: 21px;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -403,6 +428,19 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
@@ -410,6 +448,12 @@ body {
 @media screen and (max-width: 767px) {
   .contacts__item {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    padding: 0;
   }
 }
 
@@ -648,7 +692,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature__item {
     width: calc((100% - 15px * 4) / 2);
     margin: 15px;
@@ -657,7 +701,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .feature__item {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 15px * 6) / 4);
     margin-bottom: 30px;
   }
 }
@@ -824,12 +868,12 @@ body {
 
 .team__list {
   padding-bottom: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
   .team__list {
     width: 480px;
-    text-align: center;
   }
 }
 
@@ -839,9 +883,13 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
 
@@ -858,20 +906,25 @@ body {
   height: 428px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
+    width: calc((100% - 15px * 4) / 2);
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
+    width: calc((100% - 15px * 8) / 4);
     margin-bottom: 0;
   }
 }
@@ -1041,10 +1094,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: calc((100% - 15px * 10) / 6);
-  }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
+    width: calc((100% - 15px * 12) / 6);
   }
 }
 
@@ -1079,7 +1129,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__flex {
     width: 768px;
     display: -webkit-box;
@@ -1088,11 +1138,25 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 1200px;
     text-align: left;
   }
@@ -1101,6 +1165,14 @@ body {
 @media screen and (max-width: 767px) {
   .footer__item {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__item {
+    width: calc((100% - 70px * 4) / 2);
+    margin-left: 70px;
+    margin-right: 70px;
   }
 }
 
@@ -1123,6 +1195,13 @@ body {
   display: inline-block;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-contacts__link {
@@ -1163,6 +1242,14 @@ body {
 }
 
 /* footer subscribe form */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .subscribe__formfield {
   margin: 0;
   padding: 0;
@@ -1247,7 +1334,7 @@ body {
   opacity: 1;
   pointer-events: visible;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -1318,6 +1405,7 @@ body {
 
 .modal__title {
   margin-top: 40px;
+  margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
@@ -1527,6 +1615,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 

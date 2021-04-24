@@ -6,11 +6,6 @@
 }
 
 .feature__list {
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  //   margin: -15px;
-  // }
-
   @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
@@ -26,7 +21,7 @@
 }
 
 .feature__item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 15px * 4) / 2);
     margin: 15px;
   }
@@ -34,7 +29,7 @@
   @media screen and (min-width: 1200px) {
     // max-width: 1600px;
 
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 15px * 6) / 4);
     margin-bottom: 30px;
   }
 }
