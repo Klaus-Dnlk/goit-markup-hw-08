@@ -160,14 +160,60 @@
                         <sourse srcset="./images/team_o1-450.webp 480w, ./images/team_01-450@2x.webp 480w " type="image/webp" />
                      </picture>
 
-                     
-                     <img class="team__image" srcset="
-                        ./images/team_01-450.jpg 1x,
+         <!-- ВАРИАНТ №1 -->
+                     <!-- <img class="team__image" srcset="
+                        ./images/team_01-450.jpg,
                         ./images/team_01-450@2x.jpg 2x
                         " 
                         src="./images/team_01-450.jpg" 
                         alt="Игорь Демьяненко"
-                        width="100%" >
+                        width="100%" > -->
+         <!-- ВАРИАНТ №2 -->
+                        <!-- <img srcset="
+                        ./images/team_01-270.jpg 270w,
+                        ./images/team_01-354.jpg 354w,
+                        ./images/team_01-450.jpg 450w,
+                        ./images/team_01-270@2x.jpg 270w 2x,
+                        ./images/team_01-354@2x.jpg 354w 2x,
+                        ./images/team_01-450@2x.jpg 450w 2x
+                        " 
+                        src="./images/team_01-450.jpg" 
+                        alt="Игорь Демьяненко"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                        > -->
+         <!-- ВАРИАНТ №3 -->
+                        <!-- <img class="team__image"
+                        srcset="
+                        ./images/team_01-270.jpg 270w,
+                        ./images/team_01-354.jpg 354w,
+                        ./images/team_01-450.jpg 450w,
+                        ./images/team_01-450@2x.jpg 2x
+                        " 
+                        src="./images/team_01-270.jpg" 
+                        alt="Игорь Демьяненко"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                        > -->
+
+         <!-- ВАРИАНТ №4 -->
+                        <picture> 
+                           <source
+                              srcset="
+                              ./images/team_01-270@2x.jpg 2x,
+                              ./images/team_01-354@2x.jpg 2x,
+                              ./images/team_01-450@2x.jpg 2x
+                              "
+                              type="image/jpg"
+                           />
+                           <img 
+                              srcset="
+                              ./images/team_01-270.jpg 270w,
+                              ./images/team_01-354.jpg 354w,
+                              ./images/team_01-450.jpg 450w
+                              " 
+                              src="./images/team_01-450.jpg" 
+                              alt="Игорь Демьяненко"
+                              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px">
+                        </picture>
                      <div class="team__name">
                         <h3 class="team__title">Игорь Демьяненко</h3>
                         <p class="team__position">Product Designer</p>
