@@ -7,6 +7,7 @@
 
   visibility: visible;
   opacity: 1;
+  z-index: 4;
 
   pointer-events: visible;
 
@@ -15,7 +16,7 @@
 
   background: rgba(0, 0, 0, 0.2);
 
-  z-index: 1;
+  // z-index: 1;
 }
 
 .is-hidden {
@@ -33,14 +34,15 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -65%);
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   opacity: 1;
 
   width: 100vw;
-  height: 100vh;
+  height: auto;
   margin: 93px 15px;
+  padding-bottom: 40px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -56,6 +58,7 @@
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
+    transform: translate(-50%, -50%);
   }
 }
 

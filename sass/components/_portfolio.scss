@@ -7,7 +7,7 @@
 .filter {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  margin-top: 60px;
   margin-bottom: 50px;
 
   @media screen and (max-width: 767px) {
@@ -27,6 +27,7 @@
   &:not(:last-child) {
     @media screen and (min-width: 1200px) {
       margin-right: 8px;
+      // margin-top: 94px;
     }
   }
 }
@@ -78,10 +79,10 @@
 }
 
 .work__item {
-  width: 370px;
+  width: 450px;
   height: 404px;
 
-  margin: 15px;
+  margin-bottom: 30px;
 
   background: $mainBgColor;
   border: 1px solid $frameBorderColor;
@@ -99,6 +100,7 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
