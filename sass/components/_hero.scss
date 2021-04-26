@@ -34,7 +34,7 @@
   @media screen and (max-width: 767px) {
     margin-right: auto;
     margin-left: auto;
-    background-image: $bgGradient, url(../../images/hero-480.jpg);
+    background-image: $bgGradient, url(../images/hero-480.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -45,13 +45,13 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: $bgGradient, url(../../images/hero-480@2x.jpg);
+    background-image: $bgGradient, url(../images/hero-480@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__overlay {
-    background-image: $bgGradient, url(../../images/hero-768.jpg);
+    background-image: $bgGradient, url(../images/hero-768.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -61,14 +61,14 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero__overlay {
-      background-image: $bgGradient, url(../../images/hero-768@2x.jpg);
+      background-image: $bgGradient, url(../images/hero-768@2x.jpg);
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    background-image: $bgGradient, url(../../images/hero-1600.jpg);
+    background-image: $bgGradient, url(../images/hero-1600.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -78,7 +78,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero__overlay {
-      background-image: $bgGradient, url(../../images/hero-1600@2x.jpg);
+      background-image: $bgGradient, url(../images/hero-1600@2x.jpg);
     }
   }
 }
